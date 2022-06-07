@@ -18,6 +18,25 @@ I'm Bogatyrev Alexey, I've just graduated from my college. Now I work in the Ice
 * Git
 ## Code example 
 ```
+function switch(radio) {
+    let i = 0
+    let label = document.getElementsByClassName('wrapper')[0].getElementsByTagName('label')
+
+    while(i !== label.length) {
+        label[i].style.color = ''
+        i++
+    }
+    document.getElementById (_label + radio).style.color = '#fff'
+
+    switch(radio) {
+        case 'firstItem':
+            document.getElementById('switchToggle').style.transform = 'translate(0%)'
+            break;
+        case 'secondItem':
+            document.getElementById('switchToggle').style.transform = 'translate(100%)'
+            break;
+    }
+}
 
 ```
 ## Experience 
