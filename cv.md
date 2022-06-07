@@ -40,13 +40,12 @@ function switch(radio) {
 
 ```
 ## Experience 
-* __My working project:__ (https://iceberg-crm.ru/) 
-    + (__My tabs:__ finances, warehouses, orders, tasks(mobile version), calls)
-* __My learning projects:__ ["All my projects are here, which you can see"] https://github.com/alexeybogatyrevv/alexeybogatyrevv.github.io
+* __My working project:__ [iceberg-crm](https://iceberg-crm.ru/ "'__My tabs:__ finances, warehouses, orders, tasks(mobile version), calls'")
+* __My learning projects:__ [All my projects are here, which you can see](https://github.com/alexeybogatyrevv/alexeybogatyrevv.github.io)
 ## Education
 * __College:__ Almaty College of Economics and Law
 ## English
-I've been learning Engliah for one year, I have A2 level, I learn English every day except weekends by video lessons from youtube. I learn English by this channel - ["This one"] https://www.youtube.com/c/%D0%90%D0%9D%D0%93%D0%9B%D0%98%D0%99%D0%A1%D0%9A%D0%98%D0%99%D0%AF%D0%97%D0%AB%D0%9A%D0%9F%D0%9E%D0%9F%D0%9B%D0%95%D0%99%D0%9B%D0%98%D0%A1%D0%A2%D0%90%D0%9C
+I've been learning Engliah for one year, I have A2 level, I learn English every day except weekends by video lessons from youtube. I learn English by this channel - [This one](https://www.youtube.com/c/%D0%90%D0%9D%D0%93%D0%9B%D0%98%D0%99%D0%A1%D0%9A%D0%98%D0%99%D0%AF%D0%97%D0%AB%D0%9A%D0%9F%D0%9E%D0%9F%D0%9B%D0%95%D0%99%D0%9B%D0%98%D0%A1%D0%A2%D0%90%D0%9C)
 
 
 
