@@ -17,8 +17,7 @@ I'm Bogatyrev Alexey, I've just graduated from my college. Now I work in the Ice
 * JavaScript
 * Git
 ## Code example 
-`
-function switch(radio) {
+`function switch(radio) {
     let i = 0;
     let label = document.getElementsByClassName('wrapper')[0].getElementsByTagName('label');
 
@@ -36,8 +35,7 @@ function switch(radio) {
             document.getElementById('switchToggle').style.transform = 'translate(100%)'
             break;
     }
-}
-`
+}`
 ## Experience 
 * __My working project:__ (https://iceberg-crm.ru/) 
     + (__My tabs:__ finances, warehouses, orders, tasks(mobile version), calls)
