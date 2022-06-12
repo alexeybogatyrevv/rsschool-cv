@@ -134,18 +134,39 @@
 }
 /* skills */
 .skills {
+    margin: 20px 0 0 0;
 
     &__title {
     }
 
     &__list {
+       
+        max-width: 180px;
+        margin: 20px auto 0 auto; 
     }
 
     &__item {
+        position: relative;
+        font-size: 14px;
+        font-weight: 400;
+        color: $mainDarkColor;
+        padding: 0 0 0 15px;
+    }
+    &__item::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: $mainDarkColor;
+    }
+    &__item:not(:last-child) {
+        margin: 0 auto 10px auto;
     }
 }
-.titleWhite {
-}
+
 
 .titleWhite {
     margin: 0 auto;

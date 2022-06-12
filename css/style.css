@@ -233,6 +233,38 @@ h6 {
 }
 
 /* skills */
+.skills {
+  margin: 20px 0 0 0;
+}
+
+.skills__list {
+  max-width: 180px;
+  margin: 20px auto 0 auto;
+}
+
+.skills__item {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #231F20;
+  padding: 0 0 0 15px;
+}
+
+.skills__item::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #231F20;
+}
+
+.skills__item:not(:last-child) {
+  margin: 0 auto 10px auto;
+}
+
 .titleWhite {
   margin: 0 auto;
   max-width: 180px;
