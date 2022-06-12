@@ -76,7 +76,7 @@
                 </div>
                 <div class="wrapper__second">
                     <div class="hobbies">
-                        <div class="hobbies__title titleDark">Hobbies</div>
+                        <h2 class="hobbies__title titleDark">Hobbies</h2>
                         <div class="hobbies__wrapper">
                             <div class="hobbies__item"></div>
                             <div class="hobbies__item"></div>
@@ -85,6 +85,73 @@
                             <div class="hobbies__item"></div>
                             <div class="hobbies__item"></div>
                         </div>
+                    </div>
+                    <div class="about">
+                        <h2 class="about__title titleDark">About me</h2>
+                        <div class="about__text">
+                            I’m Bogatyrev Alexey, I’ve just graduated from my college. Now I work in the Iceberg
+                            company. <br>
+                            I’m a frontend developer, I’ve been working here for three months. <br>
+                            Now I understood that I don’t have enough knowledge about javaScript because <br> I usually
+                            do
+                            routine work(change
+                            css styles). Now my aim is to complete this course <br> and the following to improve my
+                            javaScript skills and find a job with big salary.
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h2 class="experience__title titleDark">Experience</h2>
+                        <div class="experience__text">
+                            <div class="experience__subtitle">ICEBERG</div>
+                            <div class="experience__descr">
+                                I've been working here for three months, I'm a frontend developer. <br>
+                                We develop the crm system <span>iceberg-crm</span>.
+                            </div>
+                            <div class="experience__subtitle">My study projects</div>
+                            <div class="experience__descr">
+                                <a href="https://github.com/alexeybogatyrevv/alexeybogatyrevv.github.io">Here</a> you
+                                can check all my study projects.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h2 class="education__title titleDark">Education</h2>
+                        <div class="education__text">
+                            <div class="education__subtitle">Almaty College of Economics and Law</div>
+                            <div class="education__descr">
+                                I studied here for four years. I graduated from college this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example">
+                        <h2 class="example__title titleDark">Code Example</h2>
+                        <p class="example__descr">
+                            This code makes a beatiful switch, it switches the color and the element that moves back and
+                            forth.
+                        </p>
+                        <pre>
+                            <code>
+    function switch(radio) {
+        let i = 0
+        let label = document.getElementsByClassName('wrapper')[0].getElementsByTagName('label')    
+
+        while(i !== label.length) {
+            label[i].style.color = ''
+            i++
+        }
+        document.getElementById (_label + radio).style.color = '#fff'
+
+        switch(radio) {
+            case 'firstItem':
+                document.getElementById('switchToggle').style.transform = 'translate(0%)'
+                break;
+            case 'secondItem':
+                document.getElementById('switchToggle').style.transform = 'translate(100%)'
+                break;
+        }
+    }                                
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </div>
