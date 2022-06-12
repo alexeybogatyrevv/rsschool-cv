@@ -1,4 +1,4 @@
-@import '_variables';
+@import "_variables";
 /* header */
 .header {
     padding: 97px 0;
@@ -8,9 +8,12 @@
 .wrapper {
     position: relative;
     display: flex;
-    align-items: center;
+    gap: 30px;
     &__first {
+        position: relative;
+        top: -50px;
         padding: 0 55px 0 0;
+        margin: 0 0 0 50px;
         width: 310px;
         height: 960px;
         background: url("../img/main/main-bg.svg") center center / cover no-repeat;
@@ -19,19 +22,25 @@
     &__second {
     }
 }
+/* first */
 /* info */
 .info {
-
+    position: relative;
     &__img {
-        max-width: 130px;
-        max-height: 130px;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: -275px;
+        left: 3px;
+
         img {
-            max-width: 100%;
+            width: 100%;
         }
     }
 
     &__title {
-        margin: 15px 0 0 0;
+        margin: 150px 0 0 0;
         font-size: 22px;
         font-weight: 400;
         line-height: 28px;
@@ -53,7 +62,7 @@
     }
 }
 /* contacts */
-.contact {  
+.contact {
     margin: 20px 0 0 0;
     &__title {
     }
@@ -61,7 +70,7 @@
     &__list {
         margin: 20px 0 0 0;
     }
-    
+
     &__item {
         padding: 0 0 0 30px;
         position: relative;
@@ -69,43 +78,41 @@
         margin: 0 auto;
     }
     &__item::before {
-        content: '';
+        content: "";
         position: absolute;
         top: -5px;
         left: 0;
         width: 25px;
         height: 25px;
-        
     }
     &__item:nth-child(1):before {
-        background: url('../icons/home.svg') no-repeat;
+        background: url("../icons/home.svg") no-repeat;
         background-size: 25px;
     }
     &__item:nth-child(2):before {
-        background: url('../icons/phone.svg') no-repeat;
+        background: url("../icons/phone.svg") no-repeat;
         background-size: 25px;
     }
     &__item:nth-child(3):before {
-        background: url('../icons/email.svg') no-repeat;
+        background: url("../icons/email.svg") no-repeat;
         background-size: 25px;
     }
     &__item:nth-child(4):before {
-        background: url('../icons/github.svg') no-repeat;
+        background: url("../icons/github.svg") no-repeat;
         background-size: 25px;
     }
     &__item:nth-child(5):before {
-        background: url('../icons/discord.svg') no-repeat;
+        background: url("../icons/discord.svg") no-repeat;
         background-size: 25px;
     }
     &__item:nth-child(6):before {
-        background: url('../icons/telegram.svg') no-repeat;
+        background: url("../icons/telegram.svg") no-repeat;
         background-size: 25px;
     }
     &__item:not(:last-child) {
         margin: 0 auto 15px auto;
     }
-    
-    
+
     &__link {
         position: relative;
         font-size: 14px;
@@ -115,10 +122,10 @@
 
         &:hover {
             color: $mainWhite;
-        }  
+        }
     }
     &__link::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -3px;
         left: 0;
@@ -126,7 +133,6 @@
         height: 2px;
         background-color: $mainDarkColor;
         transition: all 0.3s ease;
-         
     }
     &__link:hover::before {
         width: 100%;
@@ -140,9 +146,8 @@
     }
 
     &__list {
-       
         max-width: 180px;
-        margin: 20px auto 0 auto; 
+        margin: 20px auto 0 auto;
     }
 
     &__item {
@@ -153,7 +158,7 @@
         padding: 0 0 0 15px;
     }
     &__item::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 4px;
         left: 0;
@@ -166,14 +171,51 @@
         margin: 0 auto 10px auto;
     }
 }
+/* languages */
+.languages {
+    margin: 20px 0 0 0;
 
+    &__title {
+    }
+
+    &__block {
+        margin: 20px 0 0 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+    }
+
+    &__circle {
+        width: 50px;
+        height: 50px;
+        background-color: $mainDarkColor;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $mainWhite;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        margin: 10px 0 0 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: $mainDarkColor;
+    }
+}
 
 .titleWhite {
     margin: 0 auto;
     max-width: 180px;
     position: relative;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     color: $mainDarkColor;
     background-color: $mainWhite;
@@ -182,13 +224,12 @@
     text-align: center;
     transition: all 1s ease;
     z-index: 1;
-    
 }
 .titleWhite:hover {
     color: $mainWhite;
 }
 .titleWhite::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -198,9 +239,105 @@
     z-index: -1;
     background-color: $mainDarkColor;
     transition: all 0.5s ease;
-    
 }
 .titleWhite:hover::before {
+    width: 100%;
+}
+/* second */
+.hobbies {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #bcbec0;
+    &__title {
+    }
+
+    &__wrapper {
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__item {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $mainBlueColor;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__item:nth-child(1)::before {
+        top: 10px;
+        left: 10px;
+        background: url("../icons/music.svg") no-repeat;
+        background-size: 30px;
+    }
+    &__item:nth-child(2)::before {
+        top: 13px;
+        left: 10px;
+        background: url("../icons/reading.svg") no-repeat;
+        background-size: 30px;
+    }
+    &__item:nth-child(3)::before {
+        top: 18px;
+        left: 11px;
+        background: url("../icons/gym.svg") no-repeat;
+        background-size: 30px;
+    }
+    &__item:nth-child(4)::before {
+        top: 14px;
+        left: 11px;
+        background: url("../icons/play.svg") no-repeat;
+        background-size: 30px;
+    }
+    &__item:nth-child(5)::before {
+        top: 13px;
+        left: 10px;
+        background: url("../icons/watch.svg") no-repeat;
+        background-size: 30px;
+    }
+    &__item:nth-child(6)::before {
+        top: 10px;
+        left: 10px;
+        background: url("../icons/guitar.svg") no-repeat;
+        background-size: 30px;
+    }
+}
+.titleDark {
+    max-width: 180px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $mainWhite;
+    background-color: $mainDarkColor;
+    border-radius: 50px;
+    padding: 3px 30px;
+    text-align: center;
+    transition: all 1s ease;
+    z-index: 1;
+}
+.titleDark:hover {
+    color: $mainDarkColor;
+}
+.titleDark::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    z-index: -1;
+    background-color: $mainBlueColor;
+    transition: all 0.5s ease;
+}
+.titleDark:hover::before {
     width: 100%;
 }
 /* footer */
