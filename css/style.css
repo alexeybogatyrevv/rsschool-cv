@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* header */
+.header {
+  padding: 97px 0;
+  background: url("../img/header/header-bg.svg") center center/cover no-repeat;
+}
+
+/* wrapper */
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper__first {
+  padding: 0 55px 0 0;
+  width: 310px;
+  height: 960px;
+  background: url("../img/main/main-bg.svg") center center/cover no-repeat;
+}
+
+/* info */
+.info__img {
+  max-width: 130px;
+  max-height: 130px;
+}
+
+.info__img img {
+  max-width: 100%;
+}
+
+.info__title {
+  margin: 15px 0 0 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #231F20;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info__title span {
+  color: #fff;
+}
+
+.info__subtitle {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #231F20;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* contacts */
+.contact {
+  margin: 20px 0 0 0;
+}
+
+.contact__list {
+  margin: 20px 0 0 0;
+}
+
+.contact__item {
+  padding: 0 0 0 30px;
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.contact__item::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.contact__item:nth-child(1):before {
+  background: url("../icons/home.svg") no-repeat;
+  background-size: 25px;
+}
+
+.contact__item:nth-child(2):before {
+  background: url("../icons/phone.svg") no-repeat;
+  background-size: 25px;
+}
+
+.contact__item:nth-child(3):before {
+  background: url("../icons/email.svg") no-repeat;
+  background-size: 25px;
+}
+
+.contact__item:nth-child(4):before {
+  background: url("../icons/github.svg") no-repeat;
+  background-size: 25px;
+}
+
+.contact__item:nth-child(5):before {
+  background: url("../icons/discord.svg") no-repeat;
+  background-size: 25px;
+}
+
+.contact__item:nth-child(6):before {
+  background: url("../icons/telegram.svg") no-repeat;
+  background-size: 25px;
+}
+
+.contact__item:not(:last-child) {
+  margin: 0 auto 15px auto;
+}
+
+.contact__link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #231F20;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact__link:hover {
+  color: #fff;
+}
+
+.contact__link::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: #231F20;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact__link:hover::before {
+  width: 100%;
+}
+
+.titleWhite {
+  margin: 0 auto;
+  max-width: 180px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #231F20;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 3px 30px;
+  text-align: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 1;
+}
+
+.titleWhite:hover {
+  color: #fff;
+}
+
+.titleWhite::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  z-index: -1;
+  background-color: #231F20;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.titleWhite:hover::before {
+  width: 100%;
+}
+
+/* footer */
+.footer {
+  padding: 102px 0 45px 0;
+  background: url("../img/footer/footer-bg.svg") center center/cover no-repeat;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
