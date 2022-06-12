@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="container">
+            <header class="header">
+
+            </header>
+            <div class="wrapper">
+                <div class="wrapper__first">
+                    <div class="info">
+                        <div class="info__img">
+                            <img src="./icons/avatar.svg" alt="avatar">
+                        </div>
+                        <h1 class="info__title">Alexey <br> <span>Bogatyrev</span></h1>
+                        <h2 class="info__subtitle">Front end developer</h2>
+                    </div>
+                    <div class="contact">
+                        <h2 class="contact__title titleWhite">Contacts</h2>
+                        <ul class="contact__list">
+                            <li class="contact__item location">
+                                <a href="https://www.google.kz/maps/place/%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD/@43.2220732,76.8491858,17z/data=!3m1!4b1!4m5!3m4!1s0x388369ef4645c55d:0xe5827792164e87c5!8m2!3d43.2220693!4d76.8513745?hl=ru"
+                                    class="contact__link">Almaty, Kazakhstan</a>
+                            </li>
+                            <li class="contact__item phone">
+                                <a href="tel: 87075851354" class="contact__link">+7 (707) 585 13 54</a>
+                            </li>
+                            <li class="contact__item email">
+                                <a href="email" class="contact__link">alesha.b.0002@gmail.com</a>
+                            </li>
+                            <li class="contact__item github">
+                                <a href="git" class="contact__link">alexeybogatyrevv</a>
+                            </li>
+                            <li class="contact__item discord">
+                                <a href="bogaaatyrev#7740" class="contact__link">bogaaatyrev#7740</a>
+                            </li>
+                            <li class="contact__item telegram">
+                                <a href="https://t.me/bogatyrevaalexey" class="contact__link">bogatyrevaalexey</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h2 class="skills__title titleWhite">Skills</h2>
+                        <ul class="skills__list">
+                            <li class="skills__item">HTML</li>
+                            <li class="skills__item">CSS</li>
+                            <li class="skills__item">JavaScript Basics</li>
+                            <li class="skills__item">Git, GitHub</li>
+                            <li class="skills__item">VS Code</li>
+                            <li class="skills__item">Figma</li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <h2 class="languages__title titleWhite">languages</h2>
+                        <div class="languages__block">
+                            <div class="languages__item">
+                                <div class="languages__circle">A1</div>
+                                <div class="languages__subtitle">English</div>
+                            </div>
+                            <div class="languages__item">
+                                <div class="languages__circle">C1</div>
+                                <div class="languages__subtitle">Russian</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper__second">
+                    <div class="hobbies">
+                        <h2 class="hobbies__title titleDark">Hobbies</h2>
+                        <div class="hobbies__wrapper">
+                            <div class="hobbies__item"></div>
+                            <div class="hobbies__item"></div>
+                            <div class="hobbies__item"></div>
+                            <div class="hobbies__item"></div>
+                            <div class="hobbies__item"></div>
+                            <div class="hobbies__item"></div>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h2 class="about__title titleDark">About me</h2>
+                        <div class="about__text">
+                            I’m Bogatyrev Alexey, I’ve just graduated from my college. Now I work in the Iceberg
+                            company. <br>
+                            I’m a frontend developer, I’ve been working here for three months. <br>
+                            Now I understood that I don’t have enough knowledge about javaScript because <br> I usually
+                            do
+                            routine work(change
+                            css styles). Now my aim is to complete this course <br> and the following to improve my
+                            javaScript skills and find a job with big salary.
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h2 class="experience__title titleDark">Experience</h2>
+                        <div class="experience__text">
+                            <div class="experience__subtitle">ICEBERG</div>
+                            <div class="experience__descr">
+                                I've been working here for three months, I'm a frontend developer. <br>
+                                We develop the crm system <span>iceberg-crm</span>.
+                            </div>
+                            <div class="experience__subtitle">My study projects</div>
+                            <div class="experience__descr">
+                                <a href="https://github.com/alexeybogatyrevv/alexeybogatyrevv.github.io">Here</a> you
+                                can check all my study projects.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h2 class="education__title titleDark">Education</h2>
+                        <div class="education__text">
+                            <div class="education__subtitle">Almaty College of Economics and Law</div>
+                            <div class="education__descr">
+                                I studied here for four years. I graduated from college this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example">
+                        <h2 class="example__title titleDark">Code Example</h2>
+                        <p class="example__descr">
+                            This code makes a beatiful switch, it switches the color and the element that moves back and
+                            forth.
+                        </p>
+                        <pre>
+                            <code>
+    function switch(radio) {
+        let i = 0
+        let label = document.getElementsByClassName('wrapper')[0].getElementsByTagName('label')    
+
+        while(i !== label.length) {
+            label[i].style.color = ''
+            i++
+        }
+        document.getElementById (_label + radio).style.color = '#fff'
+
+        switch(radio) {
+            case 'firstItem':
+                document.getElementById('switchToggle').style.transform = 'translate(0%)'
+                break;
+            case 'secondItem':
+                document.getElementById('switchToggle').style.transform = 'translate(100%)'
+                break;
+        }
+    }                                
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__item">
+                    <div class="footer__git">
+                        <a class="footer__link" href="https://github.com/alexeybogatyrevv">
+                            <img src="./icons/github.svg" alt="github">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__year">©2022</div>
+                    <div class="footer__rs">
+                        <a href="" class="footer__link">
+                            <img src="./icons/rsschool.svg" alt="rsschool">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+</body>
+
+</html>
